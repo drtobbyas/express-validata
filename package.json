@@ -13,8 +13,12 @@
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
-    "postversion": "git push && git push --tags"
-
+    "postversion": "git push && git push --tags",
+    "code:check": "yarn code:lint; yarn code:format --check",
+    "code:clean": "yarn code:lint --fix; yarn code:format --write",
+    "code:lint": "eslint --ext .js,.jsx,.ts,.tsx \"src/\"",
+    "code:format": "prettier './src/**/**.{js,jsx,ts,tsx}'",
+    "code:check:rules": "eslint --print-config .eslintrc.js | eslint-config-prettier-check"
   },
   "keywords": [
     "validata",
@@ -24,12 +28,13 @@
     "express validator"
   ],
   "author": "Oluwatobi Adeshina",
-  
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "poetic": "^1.5.0",
     "typescript": "^3.9.5"
   },
-  "files": ["lib/**/*"]
-
+  "files": [
+    "lib/**/*"
+  ]
 }
