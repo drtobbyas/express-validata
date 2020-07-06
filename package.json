@@ -1,0 +1,35 @@
+{
+  "name": "validata",
+  "version": "0.1.0",
+  "description": "An efficient joi validator middleware",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+
+  },
+  "keywords": [
+    "validata",
+    "joi",
+    "express",
+    "hapi",
+    "express validator"
+  ],
+  "author": "Oluwatobi Adeshina",
+  
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^3.9.5"
+  },
+  "files": ["lib/**/*"]
+
+}
