@@ -1,6 +1,6 @@
 {
   "name": "express-validata",
-  "version": "0.1.2",
+  "version": "0.1.1",
   "description": "An efficient joi validator middleware",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -31,9 +31,9 @@
   "author": "Oluwatobi Adeshina",
   "repository": {
     "type": "git",
-    "url": "https://github.com/drtobbyas/validata.git"
+    "url": "https://github.com/drtobbyas/express-validata.git"
   },
-  "homepage": "https://github.com/drtobbyas/validata#readme",
+  "homepage": "https://github.com/drtobbyas/express-validata#readme",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
