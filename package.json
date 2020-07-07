@@ -1,6 +1,6 @@
 {
   "name": "express-validata",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "An efficient joi validator middleware",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
