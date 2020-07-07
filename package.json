@@ -28,10 +28,18 @@
     "express validator"
   ],
   "author": "Oluwatobi Adeshina",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drtobbyas/validata.git"
+  },
+  "homepage": "https://github.com/drtobbyas/validata#readme",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "@types/jest": "^26.0.4",
+    "jest": "^26.1.0",
     "poetic": "^1.5.0",
+    "ts-jest": "^26.1.1",
     "typescript": "^3.9.5"
   },
   "files": [
