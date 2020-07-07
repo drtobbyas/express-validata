@@ -1,6 +1,6 @@
 {
-  "name": "validata",
-  "version": "0.1.0",
+  "name": "express-validata",
+  "version": "0.1.1",
   "description": "An efficient joi validator middleware",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -10,9 +10,9 @@
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint",
-    "preversion": "npm run lint",
-    "version": "npm run format && git add -A src",
+    "prepublishOnly": "npm test && npm run code:lint",
+    "preversion": "npm run code:lint",
+    "version": "npm run code:format && git add -A src",
     "postversion": "git push && git push --tags",
     "code:check": "yarn code:lint; yarn code:format --check",
     "code:clean": "yarn code:lint --fix; yarn code:format --write",
@@ -25,7 +25,8 @@
     "joi",
     "express",
     "hapi",
-    "express validator"
+    "express validata",
+    "express-validator"
   ],
   "author": "Oluwatobi Adeshina",
   "repository": {
